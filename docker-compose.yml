@@ -1,0 +1,90 @@
+version: '3.8'
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: ecommerce-analytics-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://user:password@postgres:5432/analytics
+      - MONGODB_URL=mongodb://mongodb:27017/ecommerce_raw
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=your-super-secret-key-change-in-production
+      - DEBUG=true
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+      - .:/app  # For development hot-reload
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+  postgres:
+    image: postgres:15
+    container_name: ecommerce-analytics-postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=analytics
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d analytics"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  mongodb:
+    image: mongo:6
+    container_name: ecommerce-analytics-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=ecommerce_raw
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 3
+  redis:
+    image: redis:7-alpine
+    container_name: ecommerce-analytics-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+  # Optional: PGAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: ecommerce-analytics-pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@ecommerce.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+volumes:
+  postgres_data:
+  mongodb_data:
+  redis_data:
