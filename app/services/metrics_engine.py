@@ -4,7 +4,7 @@ import json
 import logging
 from datetime import datetime, timedelta, date
 from decimal import Decimal
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, and_
 from app.utils.logger import get_loggers
@@ -14,7 +14,7 @@ from app.models.commerce import UnifiedOrder, UnifiedOrderItem
 from app.models.metrics import UnifiedMetricsDaily
 from app.database import engine
 
-logger = get_loggers(__name__)
+logger = get_loggers("MetricsEngine")
 
 
 
