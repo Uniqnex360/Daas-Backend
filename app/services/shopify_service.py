@@ -2,50 +2,37 @@ import httpx
 import asyncio
 from typing import List, Dict, Optional
 from app.utils.logger import get_loggers
+from app.services.base_http_service import BaseHttpService
+
 logger = get_loggers("ShopifyService")
 
 
-class ShopifyService:
+class ShopifyService(BaseHttpService):
     def __init__(self, access_token: str, shop_domain: str):
+        super().__init__("shopify", default_timeout=30.0)
         self.access_token = access_token
         self.shop_domain = shop_domain
-        self.base_url = f"https://{shop_domain}/admin/api/2024-01"
-        self.headers = {
-            "X-Shopify-Access-Token": access_token,
-            "Content-Type": "application/json"
-        }
-        self.timeout = 30
+        self.base_url = f"https://{shop_domain}.myshopify.com/admin/api/2023-10"
 
-    async def _get(self, endpoint: str, params: dict = None) -> List[Dict]:
-        all_items = []
-        url = f"{self.base_url}/{endpoint}"
-        params = params or {}
-        async with httpx.AsyncClient(timeout=self.timeout) as client:
-            while True:
-                try:
-                    response = await client.get(url, headers=self.headers, params=params)
-                    if response.status_code == 429:
-                        retry_after = int(
-                            response.headers.get("Retry-After", 2))
-                        logger.warning(
-                            f"Rate limit hit, retrying after {retry_after}s...")
-                        await asyncio.sleep(retry_after)
-                        continue
-                    response.raise_for_status()
-                    data = response.json()
-                    items = data.get(endpoint.split(".")[0], [])
-                    all_items.extend(items)
-                    link = response.headers.get("Link")
-                    if link and 'rel="next"' in link:
-                        next_url = link.split("<")[1].split(">")[0]
-                        url = next_url
-                        params = {}
-                    else:
-                        break
-                except httpx.HTTPError as e:
-                    logger.error(f"HTTP error fetching {endpoint}: {e}")
-                    raise
-        return all_items
+        self.set_custom_headers({
+            "X-Shopify-Access-Token": self.access_token,
+            "Content-Type": "application/json"
+        })
+
+    async def _shopify_get(self, endpoint: str, params: Optional[Dict] = None) -> List[Dict]:
+        try:
+            response = await self._make_request("GET", f"{self.base_url}/{endpoint}", params=params)
+            data = response.json()
+
+            for key in data:
+                if key != 'errors' and isinstance(data[key], list):
+                    return data[key]
+
+            return []
+
+        except Exception as e:
+            logger.error(f"Shopify API error for {endpoint}: {e}")
+            return []
 
     async def fetch_orders(self, since_id: Optional[str] = None, created_at_min: Optional[str] = None) -> List[Dict]:
         params = {"status": "any", "limit": 250}
@@ -53,13 +40,22 @@ class ShopifyService:
             params["since_id"] = since_id
         if created_at_min:
             params["created_at_min"] = created_at_min
-        return await self._get("orders.json", params)
+
+        orders = await self._shopify_get("orders.json", params)
+        logger.info(f"Fetched {len(orders)} orders from Shopify")
+        return orders
 
     async def fetch_products(self) -> List[Dict]:
-        return await self._get("products.json", {"limit": 250})
+        products = await self._shopify_get("products.json", {"limit": 250})
+        logger.info(f"Fetched {len(products)} products from Shopify")
+        return products
 
     async def fetch_customers(self) -> List[Dict]:
-        return await self._get("customers.json", {"limit": 250})
+        customers = await self._shopify_get("customers.json", {"limit": 250})
+        logger.info(f"Fetched {len(customers)} customers from Shopify")
+        return customers
 
     async def fetch_inventory(self) -> List[Dict]:
-        return await self._get("inventory_levels.json", {"limit": 250})
+        inventory = await self._shopify_get("inventory_levels.json", {"limit": 250})
+        logger.info(f"Fetched {len(inventory)} inventory items from Shopify")
+        return inventory
