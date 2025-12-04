@@ -3,6 +3,7 @@ import base64
 from typing import List, Any, Dict, Optional
 from datetime import datetime, timedelta
 from app.services.base_http_service import BaseHttpService
+from app.utils.logger import get_loggers
 
 
 class QuickBooksService(BaseHttpService):
@@ -15,6 +16,7 @@ class QuickBooksService(BaseHttpService):
         self.base_url = f"https://quickbooks.api.intuit.com/v3/company/{realm_id}"
         self.token_url = "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer"
         self._access_token = None
+        self.logger = get_loggers("QuickBooksService")
         self._token_expiry = None
         self.set_custom_headers({
             "Accept": "application/json",

@@ -1,18 +1,21 @@
-version: '3.8'
 services:
   api:
     build: 
       context: .
       dockerfile: Dockerfile
+      network: host  # ← Use host network for building
     container_name: ecommerce-analytics-api
     ports:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql+asyncpg://user:password@postgres:5432/analytics
       - MONGODB_URL=mongodb://mongodb:27017/ecommerce_raw
-      - REDIS_URL=redis://redis:6379/0
+      - REDIS_URL=redis://redis:6380/0
       - SECRET_KEY=your-super-secret-key-change-in-production
       - DEBUG=true
+    dns:  # ← Add DNS servers
+      - 8.8.8.8
+      - 8.8.4.4
     depends_on:
       postgres:
         condition: service_healthy
@@ -30,6 +33,7 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+
   postgres:
     image: postgres:15
     container_name: ecommerce-analytics-postgres
@@ -47,6 +51,7 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+
   mongodb:
     image: mongo:6
     container_name: ecommerce-analytics-mongodb
@@ -61,11 +66,12 @@ services:
       interval: 10s
       timeout: 10s
       retries: 3
+
   redis:
     image: redis:7-alpine
     container_name: ecommerce-analytics-redis
     ports:
-      - "6379:6379"
+      - "6380:6380"
     volumes:
       - redis_data:/data
     healthcheck:
@@ -73,6 +79,7 @@ services:
       interval: 5s
       timeout: 3s
       retries: 5
+
   # Optional: PGAdmin for database management
   pgadmin:
     image: dpage/pgadmin4
@@ -84,6 +91,7 @@ services:
       - "8080:80"
     depends_on:
       - postgres
+
 volumes:
   postgres_data:
   mongodb_data:

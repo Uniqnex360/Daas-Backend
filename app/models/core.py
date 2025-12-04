@@ -26,6 +26,7 @@ class User(Base):
     role = Column(Enum('super_admin', 'tenant_admin', 'user', 'viewer', name='user_roles'), 
                  nullable=False, default='user')
     tenant_id = Column(UUID(as_uuid=True), ForeignKey('tenants.id'), nullable=True)
+    scopes = Column(JSON, default=list)
     is_active = Column(Boolean, default=True)
     last_login = Column(DateTime(timezone=True), nullable=True)
     email_verified = Column(Boolean, default=False)

@@ -119,7 +119,7 @@ INSERT INTO users (id, email, password_hash, first_name, last_name, role, email_
 VALUES (
     '11111111-1111-1111-1111-111111111111',
     'admin@ecommerce.com',
-    '$2b$12$LQv3c1yqBWVHxkd0L6kPPu/0a2J7lRcXqRZJZzX8QY8Wm1VcX6XZa', -
+    '$2b$12$LQv3c1yqBWVHxkd0L6kPPu/0a2J7lRcXqRZJZzX8QY8Wm1VcX6XZa', 
     'System',
     'Administrator',
     'super_admin',

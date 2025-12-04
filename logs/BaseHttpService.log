@@ -1,0 +1,176 @@
+[2025-11-24 12:39:58,330] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:40:03,215] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:40:08,066] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:42:29,968] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:33,972] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:37,979] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:37,982] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:41,989] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:45,993] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:45,998] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:50,000] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:54,006] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:55,008] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:42:59,014] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:03,019] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:04,024] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:08,029] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:12,036] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:13,041] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:17,048] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:21,054] [ERROR] [BaseHttpService] Unexpected error for shopify: [Errno -3] Temporary failure in name resolution
+[2025-11-24 12:43:23,935] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:43:29,050] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:43:33,935] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:46:54,019] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:46:58,044] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:02,071] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:02,103] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:06,125] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:10,159] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:10,193] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:14,222] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:18,249] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:19,274] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:23,316] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:27,349] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:28,391] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:32,417] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:36,446] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:37,479] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:41,507] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:45,559] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:47:48,471] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:47:53,370] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:47:58,347] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:50:03,250] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:50:07,275] [ERROR] [BaseHttpService] Unexpected error for shopify: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1145)
+[2025-11-24 12:51:31,772] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 12:51:36,478] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 12:51:40,911] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 12:51:43,861] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:51:48,667] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:51:53,508] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:19,580] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 12:53:24,010] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 12:53:28,402] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 12:53:31,251] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:36,086] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:40,899] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:41,673] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:46,544] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:50,801] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:53,614] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:53:58,429] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:03,230] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:04,146] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:09,000] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:13,814] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:14,093] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:18,924] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:23,216] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:24,038] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:28,893] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:33,226] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:34,045] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/BalanceSheet?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:38,363] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/BalanceSheet?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:43,154] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/BalanceSheet?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:43,978] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/ProfitAndLoss?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:48,263] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/ProfitAndLoss?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 12:54:53,047] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/ProfitAndLoss?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:16,523] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 13:21:20,896] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 13:21:25,298] [ERROR] [BaseHttpService] HTTP error for shopify: 422 - Client error '422 unknown' for url 'https://goluecommercestore.myshopify.com/admin/api/2023-10/inventory_levels.json?limit=250'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+[2025-11-24 13:21:28,291] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:33,119] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:38,095] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:39,009] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:43,835] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:48,712] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:51,456] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:21:56,421] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:01,754] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:02,615] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:07,406] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:18,740] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:19,889] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:24,734] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:29,636] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:30,679] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:35,538] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:40,302] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:41,101] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/BalanceSheet?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:45,920] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/BalanceSheet?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:50,677] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/BalanceSheet?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:50,999] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/ProfitAndLoss?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:22:55,296] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/ProfitAndLoss?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+[2025-11-24 13:23:00,113] [ERROR] [BaseHttpService] HTTP error for quickbooks: 403 - Client error '403 Forbidden' for url 'https://quickbooks.api.intuit.com/v3/company/9341455727634233/reports/ProfitAndLoss?start_date=2025-08-26&end_date=2025-11-24&minorversion=65'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

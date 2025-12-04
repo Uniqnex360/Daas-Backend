@@ -3,7 +3,10 @@ import asyncio
 from typing import List, Dict, Optional
 from app.utils.logger import get_loggers
 from app.services.base_http_service import BaseHttpService
-
+import aiohttp
+import ssl
+import socket
+import certifi
 logger = get_loggers("ShopifyService")
 
 
@@ -12,7 +15,16 @@ class ShopifyService(BaseHttpService):
         super().__init__("shopify", default_timeout=30.0)
         self.access_token = access_token
         self.shop_domain = shop_domain
-        self.base_url = f"https://{shop_domain}.myshopify.com/admin/api/2023-10"
+        clean_domain = shop_domain.replace('https://', '').replace('http://', '').replace('.myshopify.com', '')
+        self.base_url = f"https://{clean_domain}.myshopify.com/admin/api/2023-10"
+        ssl_context = ssl.create_default_context(cafile=certifi.where())
+        ssl_context.set_ciphers('DEFAULT@SECLEVEL=1')
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
+        self.connector = aiohttp.TCPConnector(
+            ssl=ssl_context,
+            family=socket.AF_INET
+        )
 
         self.set_custom_headers({
             "X-Shopify-Access-Token": self.access_token,

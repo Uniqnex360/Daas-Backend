@@ -3,12 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from app.config import settings
 from app.database import create_tables
-from app.api.routes import auth, analytics, tenants
-from app.api.middleware import log_requests
+from app.api.routes import auth
+# from app.api.middleware import log_requests
 
 
 def create_application() -> FastAPI:
-    """Create and configure FastAPI application"""
     app = FastAPI(
         title=settings.APP_NAME,
         version=settings.VERSION,
@@ -23,10 +22,10 @@ def create_application() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    app.middleware("http")(log_requests)
-    app.include_router(auth.router, prefix="/api/v1")
-    app.include_router(analytics.router, prefix="/api/v1")
-    app.include_router(tenants.router, prefix="/api/v1")
+    # app.middleware("http")(log_requests)
+    # app.include_router(auth.router, prefix="/api/v1")
+    # app.include_router(analytics.router, prefix="/api/v1")
+    # app.include_router(tenants.router, prefix="/api/v1")
     return app
 
 
@@ -35,14 +34,12 @@ app = create_application()
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize application on startup"""
     await create_tables()
     print(f" {settings.APP_NAME} v{settings.VERSION} started successfully!")
 
 
 @app.get("/")
 async def root():
-    """Root endpoint"""
     return {
         "message": f"Welcome to {settings.APP_NAME}",
         "version": settings.VERSION,
@@ -52,7 +49,6 @@ async def root():
 
 @app.get("/health")
 async def health_check():
-    """Health check endpoint"""
     return {"status": "healthy", "timestamp": "2024-01-01T00:00:00Z"}
 if __name__ == "__main__":
     uvicorn.run(

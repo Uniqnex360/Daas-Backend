@@ -1,0 +1,45 @@
+[2025-11-24 12:42:37,980] [ERROR] [ShopifyService] Shopify API error for orders.json: RetryError[<Future at 0x7f52b7b0abb0 state=finished raised ConnectError>]
+[2025-11-24 12:42:37,980] [INFO] [ShopifyService] Fetched 0 orders from Shopify
+[2025-11-24 12:42:45,993] [ERROR] [ShopifyService] Shopify API error for products.json: RetryError[<Future at 0x7f52b7aa7a60 state=finished raised ConnectError>]
+[2025-11-24 12:42:45,993] [INFO] [ShopifyService] Fetched 0 products from Shopify
+[2025-11-24 12:42:54,006] [ERROR] [ShopifyService] Shopify API error for orders.json: RetryError[<Future at 0x7f52b7aa7e80 state=finished raised ConnectError>]
+[2025-11-24 12:42:54,006] [INFO] [ShopifyService] Fetched 0 orders from Shopify
+[2025-11-24 12:43:03,019] [ERROR] [ShopifyService] Shopify API error for products.json: RetryError[<Future at 0x7f52b7ab5fa0 state=finished raised ConnectError>]
+[2025-11-24 12:43:03,019] [INFO] [ShopifyService] Fetched 0 products from Shopify
+[2025-11-24 12:43:12,036] [ERROR] [ShopifyService] Shopify API error for customers.json: RetryError[<Future at 0x7f52b7ab53a0 state=finished raised ConnectError>]
+[2025-11-24 12:43:12,037] [INFO] [ShopifyService] Fetched 0 customers from Shopify
+[2025-11-24 12:43:21,054] [ERROR] [ShopifyService] Shopify API error for inventory_levels.json: RetryError[<Future at 0x7f52b7b8eaf0 state=finished raised ConnectError>]
+[2025-11-24 12:43:21,054] [INFO] [ShopifyService] Fetched 0 inventory items from Shopify
+[2025-11-24 12:47:02,071] [ERROR] [ShopifyService] Shopify API error for orders.json: RetryError[<Future at 0x7f9aa4714e50 state=finished raised ConnectError>]
+[2025-11-24 12:47:02,071] [INFO] [ShopifyService] Fetched 0 orders from Shopify
+[2025-11-24 12:47:10,160] [ERROR] [ShopifyService] Shopify API error for products.json: RetryError[<Future at 0x7f9aa45c9670 state=finished raised ConnectError>]
+[2025-11-24 12:47:10,160] [INFO] [ShopifyService] Fetched 0 products from Shopify
+[2025-11-24 12:47:18,249] [ERROR] [ShopifyService] Shopify API error for orders.json: RetryError[<Future at 0x7f9aa45cf280 state=finished raised ConnectError>]
+[2025-11-24 12:47:18,249] [INFO] [ShopifyService] Fetched 0 orders from Shopify
+[2025-11-24 12:47:27,350] [ERROR] [ShopifyService] Shopify API error for products.json: RetryError[<Future at 0x7f9aa45d5a60 state=finished raised ConnectError>]
+[2025-11-24 12:47:27,350] [INFO] [ShopifyService] Fetched 0 products from Shopify
+[2025-11-24 12:47:36,446] [ERROR] [ShopifyService] Shopify API error for customers.json: RetryError[<Future at 0x7f9aa45da940 state=finished raised ConnectError>]
+[2025-11-24 12:47:36,446] [INFO] [ShopifyService] Fetched 0 customers from Shopify
+[2025-11-24 12:47:45,560] [ERROR] [ShopifyService] Shopify API error for inventory_levels.json: RetryError[<Future at 0x7f9aa45d5d60 state=finished raised ConnectError>]
+[2025-11-24 12:47:45,560] [INFO] [ShopifyService] Fetched 0 inventory items from Shopify
+[2025-11-24 12:51:23,521] [INFO] [ShopifyService] Fetched 3 orders from Shopify
+[2025-11-24 12:51:26,671] [INFO] [ShopifyService] Fetched 190 products from Shopify
+[2025-11-24 12:51:27,191] [INFO] [ShopifyService] Fetched 3 orders from Shopify
+[2025-11-24 12:51:28,851] [INFO] [ShopifyService] Fetched 190 products from Shopify
+[2025-11-24 12:51:30,347] [INFO] [ShopifyService] Fetched 1 customers from Shopify
+[2025-11-24 12:51:40,911] [ERROR] [ShopifyService] Shopify API error for inventory_levels.json: RetryError[<Future at 0x7f0d84e0f760 state=finished raised HTTPStatusError>]
+[2025-11-24 12:51:40,911] [INFO] [ShopifyService] Fetched 0 inventory items from Shopify
+[2025-11-24 12:53:13,777] [INFO] [ShopifyService] Fetched 3 orders from Shopify
+[2025-11-24 12:53:14,434] [INFO] [ShopifyService] Fetched 190 products from Shopify
+[2025-11-24 12:53:15,006] [INFO] [ShopifyService] Fetched 3 orders from Shopify
+[2025-11-24 12:53:16,742] [INFO] [ShopifyService] Fetched 190 products from Shopify
+[2025-11-24 12:53:18,167] [INFO] [ShopifyService] Fetched 1 customers from Shopify
+[2025-11-24 12:53:28,403] [ERROR] [ShopifyService] Shopify API error for inventory_levels.json: RetryError[<Future at 0x7fef18337520 state=finished raised HTTPStatusError>]
+[2025-11-24 12:53:28,403] [INFO] [ShopifyService] Fetched 0 inventory items from Shopify
+[2025-11-24 13:21:10,412] [INFO] [ShopifyService] Fetched 3 orders from Shopify
+[2025-11-24 13:21:11,407] [INFO] [ShopifyService] Fetched 190 products from Shopify
+[2025-11-24 13:21:11,926] [INFO] [ShopifyService] Fetched 3 orders from Shopify
+[2025-11-24 13:21:13,655] [INFO] [ShopifyService] Fetched 190 products from Shopify
+[2025-11-24 13:21:15,090] [INFO] [ShopifyService] Fetched 1 customers from Shopify
+[2025-11-24 13:21:25,299] [ERROR] [ShopifyService] Shopify API error for inventory_levels.json: RetryError[<Future at 0x7f1579784910 state=finished raised HTTPStatusError>]
+[2025-11-24 13:21:25,299] [INFO] [ShopifyService] Fetched 0 inventory items from Shopify
