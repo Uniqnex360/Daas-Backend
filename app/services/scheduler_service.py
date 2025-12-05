@@ -4,8 +4,11 @@ from app.services.scheduler_service import __new__
 from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.jobstores.redis import RedisJobStore
 from apscheduler.triggers.cron import CronTrigger
-
+from app.database import AsyncSessionLocal, get_mongodb
+from sqlalchemy import select, update
 from app.utils.logger import get_loggers
+from app.models.core import Tenant, PlatformIntegration
+
 logger = get_loggers("SchedulerService")
 
 from app.config import settings
@@ -69,4 +72,65 @@ class SchedulerService:
             logger.info(f"Removed job :{job_id}")
         except Exception as e:
             logger.error(f"Failed to remove job {job_id}:{e}")
+    def get_job(self)->List[Dict]:
+        jobs=[]
+        for job in self._scheduler.get_job():
+            jobs.append({
+                'id':job.id,'name':job.name,'next_run':job.next_run_time.isoformat() if job.next_run_time else None ,'trigger':str(job.trigger)
+            })
+        return jobs
+    async def sync_all_tenants_full():
+        logger.info("Started full sync for all tenants")
+        async with AsyncSessionLocal() as db:
+            result=await db.execute(select(Tenant))
+            tenants=result.scalars().all()
+            for tenant in tenants:
+                try:
+                    await sync_tenant_all_platforms(str(tenant.id),db)
+                except Exception as e:
+                    logger.error(f"Full sync failed for {tenant.id}:{e}")
+                    continue
+        logger.info('Full async completed for all tenants')
+        
+    async  def sync_all_tenants_orders():
+        logger.info("Starting orders sync for all tenants")
+        async with AsyncSessionLocal() as db:
+            result=await db.execute(select(Tenant))
+            tenants=result.scalars().all()
+            for tenant in tenants:
+                try:
+                    await sync_tenant_orders_only(str(tenant.id),db)
+                except Exception as e:
+                    logger.error(f"Orders sync failed for tenant {tenant.id}: {e}")
+                    continue
+        logger.info("Orders sync completed for all tenants")
+    async def sync_all_tenants_inventory():
+        logger.info("Starting inventory sync for all tenants")
+        async with AsyncSessionLocal() as db:
+            result=await db.execute(select(Tenant))
+            tenants=result.scalars().all()
+            for tenant in tenants:
+                try:
+                    await sync_tenant_inventory_only(str(tenant.id),db)
+                except Exception as e:
+                    logger.error(f"Inventory sync failed for tenant {tenant.id}:{e}")
+                    
+    async def sync_all_tenants_quickbooks():
+        logger.info("Starting syncing of all quickbooks")
+        async with AsyncSessionLocal() as db:
+            result=await db.execute(select(PlatformIntegration).where(PlatformIntegration.platform=='quickbooks',PlatformIntegration.is_active==True))
+            integrations=result.scalars().all()
+            for intengration in integrations:
+                try:
+                    await sync_quickbooks_for_tenant(str(intengration.tenant_id),integration,db)
+                except Exception as e:
+                    logger.error(f"Quickbooks sync failed for tenant{integration.tenant_id}:{e}")
+                    continue
+        logger.info("Quickbooks sync completed for all tenants!")
+    
+    async def calculate_daily_metrics_all_tenants():
+        logger.info(f"Starting daily calculation for all tenants")
+        
+            
+        
         
